@@ -6,7 +6,7 @@ $(function() {
     })
 
     $("#btnDangerFadeOut").click(function() {
-        $(".alert-danger").fadeOut(2000)
+        $(".alert-danger").fadeOut(3000)
     })
 
 })
