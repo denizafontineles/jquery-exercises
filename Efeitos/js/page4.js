@@ -7,5 +7,4 @@ $(function() {
         $(".card-two").slideToggle(3000)
         $(".card-three").slideToggle(5000)
     })
-
 })
