@@ -1,0 +1,1 @@
+// **3.** No arquivo page3.html, no clique do botão programe toogle para cada card, com tempos diferentes para cada um.
