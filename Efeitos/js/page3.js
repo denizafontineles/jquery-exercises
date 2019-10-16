@@ -7,9 +7,29 @@ $(function() {
             $(".card-three").toggle(1000)
         })
 
+        function alteraHover() {
+
+            $(".card-title").off("mouseenter").on("mouseenter",
+                function() {
+                    $(this).css('color', 'yellow');
+                }
+            )
+
+            $(".card-title").off("mouseleave").on("mouseleave",
+                function() {
+                    $(this).css('color', 'red');
+                }
+            )
+
+            alteraHover()
+        }
+
         $(".btn-seg").click(function() {
-            let content = $(".row").html()
-            $(content).append(".row")
+            let content = $(".add-card").html()
+            $(".add-card").append(content)
+
+            alteraHover()
+
         })
     })
     // Na página 3, crie um segundo botão que insira mais um fileira de cards.
