@@ -9,7 +9,7 @@ $(function() {
     // * Adicione a classe "list-group-item-info" no item.
     // * Adicione a classe "list-group-item-dark" nos demais itens.
 
-    $(".list-group-item").click(function() {
+    $(".list-group-item").on("click", function() {
         $(this).removeClass("list-group-item-dark").addClass("list-group-item-info");
         $(this).siblings().removeClass("list-group-item-info").addClass("list-group-item-dark")
     })
